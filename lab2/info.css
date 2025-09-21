@@ -1,0 +1,13 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    color: rgb(157, 102, 1);
+}
+td{
+    color: rgb(217, 146, 15);
+}

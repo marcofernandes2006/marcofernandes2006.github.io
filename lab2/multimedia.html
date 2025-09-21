@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cidade</title>
-    </head>
-    <body>
-        <header>
-            <h1>Cabo Canaveral</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+    <link rel="stylesheet" href="/lab2/multimedia.css" />
+    <link rel="stylesheet" href="/lab2/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Cabo Canaveral</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimédia</a>
-            <a href="info.html">Informação</a>
-            <a href="../index.html">O meu Primeiro Site</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+                <li><a href="info.html">Informação</a></li>
+                <li><a href="../index.html">O meu Primeiro Site</a></li>
+            </ul>
         </nav>
-        </header>
-        <main>
+    </header>
+    <main>
+        <section>
             <h2>Multimédia</h2>
-            <p>Nesta página encontra conteúdos multimédia</p>
-            <section>
-                <h3>Fotografias</h3>
-            </section>
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
-    </body>
+        <p>Nesta página encontra conteúdos multimédia</p>
+        <p>
+            <a href="#fotografia">Fotografias</a>
+            <a href="#video">Vídeo</a>
+            <a href="#poesia">Poema</a>
+        </p>
+        </section>
+        <section>
+            <h3 id="fotografias">Fotografias</h3>
+            <div class="fotografias">
+                <img src="images/caboCanaveralCidade.jpg" alt="cidade">
+                <img src="images/caboCanaveralHotel.jpg" alt="hotel">
+                <img src="images/caboCanaveralLancamentoDeFoguete.jpg" alt="foguete">
+                <img src="images/caboCanaveralNasaLogo.jpg" alt="Nasa logo">
+                <img src="images/caboCanaveralNasaSpaceCenter.jpg" alt="Nasa centro">
+                <img src="images/caboCanaveralPlanicie.jpg" alt="planicie">
+                <img src="images/caboCanaveralPraia.jpg" alt="praia">
+                <img src="images/caboCanaveralRisorte.jpg" alt="risorte">
+            </div>
+        </section>
+        <section>
+            <h3 id="video">Vídeo</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rSj_8WDyPy0?si=Bchw7yJcnTAYWwf1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h3 class="poesia" id="poesia">Poesia</h3>
+            <div class="poema">
+                <p>
+                    Entre areias que beijam o mar,<br>
+                    ergue-se o porto do sonho estelar.<br>
+                    Ali, onde o vento carrega memória,<br>
+                    a Terra se estende à fronteira da história.
+                </p>
+
+                <p>
+                    Rugem motores, trovões da ciência,<br>
+                    queimam-se os céus na pura ardência.<br>
+                    Do solo salgado, da espuma do Atlântico,<br>
+                    ergue-se a chama em voo titânico.
+                </p>
+
+                <p>
+                    Cabo de início, farol sideral,<br>
+                    porta da Terra, degrau celestial.<br>
+                    De Apolo a foguetes que o tempo embala,<br>
+                    ali se escreve a epopeia que não se cala.
+                </p>
+
+                <p>
+                    E quando o silêncio retorna ao cais,<br>
+                    fica no ar um suspiro que jamais se desfaz:<br>
+                    a promessa eterna de partir e voltar,<br>
+                    de buscar no infinito o dom de sonhar.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>DIW 2025</p>
+    </footer>
+</body>
+
 </html>
