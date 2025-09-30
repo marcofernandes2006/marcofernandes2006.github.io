@@ -1,0 +1,42 @@
+.tabela {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalhos (Demografia, Geografia, Website) */
+.tabela th {
+  background-color: #C41E3A; /* vermelho pompeiano */
+  color: whitesmoke;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  width: 200px;
+}
+
+/* Células normais */
+.tabela td {
+  background-color: #fff;
+  color: #575757;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Links dentro da tabela */
+.tabela a {
+  color: #C41E3A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabela a:hover {
+  text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}

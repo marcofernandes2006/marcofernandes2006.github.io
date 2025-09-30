@@ -1,3 +1,322 @@
-body {
-    background-color: #b3b3b3;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(32, 32, 32);
+}
+
+header,footer, section, footer {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background: rgba(24, 24, 24, 0.95);
+  position: sticky;
+  height: 5vh;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+header h1{
+  color: whitesmoke;
+  font-size: 4.5vh;
+  margin-right: 10vh;
+  text-align: left;
+  margin-left: 4vh;
+  margin-right: 30vh;
+}
+
+header nav {
+  margin-left: auto;
+  margin-right: 4vh;
+}
+
+header nav ul{
+  display: flex;
+  gap: 5vh;
+  margin-left: auto;
+  margin-right: 4vh;
+  text-align: right;
+  list-style-type: none;
+}
+
+header nav ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 2vh;
+  font-size: 2.5vh;
+  padding: 0.5vh 1vh;
+}
+
+header nav ul li a:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(14, 180, 14);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+section:nth-child(1) {
+  justify-content: center;
+  height: 5vh;
+  background-color: rgb(32, 32, 32);
+  font-size: 3vh;
+  color: whitesmoke;
+}
+
+section:nth-child(2) {
+  height: 90vh;
+  background-image: url(./images/background-test.jpg);
+  background-size: cover;
+  font-size: 5vh;
+  color: rgb(255, 255, 255);
+}
+
+.motivacional {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("images/fundo-montanhas.jpg") no-repeat center/cover;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.chatgpt {
+  position: relative;
+  z-index: 1;
+  font-size: 5vh;
+  max-width: 1700px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.chatgpt h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.chatgpt p {
+  margin-top: 2vh;
+  font-size: 2.5vh;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.imagemchatgpt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125vh;
+  opacity: 0.40;
+  z-index: 0;
+}
+
+section:nth-child(2) a{ 
+  color: black;
+  background: rgb(14, 180, 14);
+  text-decoration: none;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+  font-size: 3vh;
+  position: absolute;
+  bottom: 20vh;
+}
+
+section:nth-child(2) a:hover{
+  background: whitesmoke;
+  color: black;
+  transition: 0.3s;
+
+}
+
+section:nth-child(3) {
+  height: 99vh;
+  background: #d1d1d1;
+  font-size: 5vh;
+  justify-content: center;
+  display: flex;         
+  padding: 5vh;
+}
+
+section:nth-child(3) img {
+  position: absolute;
+  top: 150%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  width: 70vh;
+  z-index: 0;
+}
+
+.projetos-titulo-e-descricao {
+  text-align: center;
+  margin-bottom: 4vh;
+  padding-top: 2vh;
+  z-index: 1;
+  margin-right: 4vh;
+  margin-bottom: 20vh;
+  margin-top: 5vh;
+}
+
+.projetos-titulo-e-descricao h2 {
+  font-size: 10vh;
+  color: rgb(14, 180, 14);
+  margin-bottom: 7vh;
+  margin-top: 7vh;
+}
+
+.projetos-titulo-e-descricao p {
+  color: whitesmoke;
+  margin-left: 25vh;
+  margin-right: 25vh;
+}
+
+.listaDeLabs {
+  margin-right: 25vh;
+  text-align: center;
+  z-index: 1;
+  background-color: rgb(24, 24, 24);
+  width: 75vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 10px solid rgb(48, 48, 48);
+  border-radius: 20px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.listaDeLabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 70vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2vh;
+  margin: 1vh;
+}
+
+.listaDeLabs ul li {
+  background-color: rgb(46, 46, 46);
+  padding: 10vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: auto;
+  margin-top: 1.6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.listaDeLabs ul li:hover {
+  background-color: rgb(14, 180, 14);
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.listaDeLabs ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.listaDeLabs ul::-webkit-scrollbar {
+  width: 12px;
+  height: auto;
+  border-radius: 10px;
+  padding-right: 3vh;
+}
+
+.listaDeLabs ul::-webkit-scrollbar-thumb {
+  background-color: rgb(14, 180, 14);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.listaDeLabs ul::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(14, 180, 14, 0.8);
+}
+
+.listaDeLabs ul::-webkit-scrollbar-track {
+  background: #323232; 
+}
+
+section:nth-child(4) {
+  height: 85vh;
+  font-size: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+section:nth-child(4) img {
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vh;
+  max-width: 100vh;
+  opacity: 0.10;
+  z-index: 0;
+}
+section:nth-child(4) p {
+  margin-left: 10vh;
+  margin-right: 10vh;
+  z-index: 1;
+  text-align: center;
+  color: whitesmoke;
+}
+
+section:nth-child(4) h2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  z-index: 1;
+  color: rgb(14, 180, 14);
+}
+
+section:nth-child(4) p a{
+  color: rgb(14, 180, 14);
+  text-decoration: none;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+}
+
+section:nth-child(4) p a:hover{
+  background: whitesmoke;
+  color: black;
+  transition: 0.3s;
+}
+
+section:nth-child(4) ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5vh;
+  z-index: 1;
+}
+
+section:nth-child(4) ul li{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 3vh;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+  background-color: rgb(24, 24, 24);
+}
+
+footer {
+  height: 10vh;
+  background: black;
+  color: white;
+  font-size: 2vh;
+  justify-content: center;
 }

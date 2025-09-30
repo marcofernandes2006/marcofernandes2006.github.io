@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="utf-8">
   <title>Primeira Página</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<header>
-  <h1>Primeira Página Web!</h1>
-</header>
+  <header id="menu">
+    <h1>Primeira Página Web!</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#diw">Disciplina</a></li>
+      </ul>
+    </nav>
 
-<main>
-  <p>Eis a minha primeira página Web!</p>
-  <p>
-    Na Unidade Curricular de
-    <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
-      Desenvolvimento de Interfaces Web
-    </a>
-    abordaremos as seguintes tecnologias Web &#127760;:
-  </p>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>React e Next.js</li>
-  </ul>
-  <p>Teremos criar soluções criativas!</p>
-  <nav>
-    <ul>
-      <li><a href="lab1/index.html">Lab1</a></li>
-      <li><a href="lab2/index.html">Lab2</a></li>
-    </ul>
-  </nav>
-  <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" width="300">
-</main>
+  </header>
 
-<footer>
-  <p>Universidade Lusófona © 2025</p>
-</footer>
+  <main>
+    <section id="menu">
+      <p>Eis a minha primeira página Web!</p>
+    </section>
+    <section class="motivacional">
+      <img src="images/logo-chatgpt.png" alt="Logo ChatGPT" class="imagemchatgpt">
+      <div class="chatgpt">
+        <h3>"Cada grande conquista começa com um pequeno passo. O importante é nunca parar de avançar."</h3>
+        <p>-- ChatGPT</p>
+      </div>
+      <a href="#projetos">Projetos</a>
+    </section>
+    <section id="projetos">
+      
+      <div class="projetos-titulo-e-descricao">
+        <h2>Projetos</h2>
+        <p>Estes são os meus projetos de Desenvolvimento de Interfaces Web</p>
+      </div>
+      <img src="images/file.png" alt="file">
+      <div class="listaDeLabs">
+        <nav>
+          <ul>
+            <li><a href="lab1/index.html">Lab1</a></li>
+            <li><a href="lab2/index.html">Lab2</a></li>
+            <li><a href="lab3/index.html">Lab3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section id="diw">
+      <h2>Disciplina</h2>
+      <p>
+        Na Unidade Curricular de
+        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
+          Desenvolvimento de Interfaces Web
+        </a>
+        abordaremos as seguintes tecnologias Web &#127760;:
+      </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React e Next.js</li>
+      </ul>
+      <p>Teremos criar soluções criativas!</p>
+      <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" width="700">
+    </section>
+  </main>
+
+  <footer>
+    <p>Universidade Lusófona © 2025</p>
+  </footer>
 
 </body>
+
 </html>

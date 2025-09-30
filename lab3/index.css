@@ -1,0 +1,21 @@
+.imagens-iniciais {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.imagens-iniciais{
+    background-color: none;
+}
+
+@media (max-width: 600px) {
+    .imagens-iniciais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens-iniciais img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
