@@ -68,7 +68,7 @@ body {
   background-color: #eeeeee;
 }
 
-div {
+section div {
   background-color: #ffffff;
   margin: 20px auto;
   padding: 20px;
@@ -134,14 +134,6 @@ footer {
     transition-duration: 0.5s;
     display: flex;
     
-  }
-
-  .hamburguer {
-    display: flex;
-    float: right;
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 20px; 
   }
 
   nav ul li a {
