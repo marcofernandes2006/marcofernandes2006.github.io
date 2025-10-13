@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Interatividade</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Divirta-se</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="listaDeConteudos">
+
+
+            <section class="bitcoinClicker">
+                <h2>Bitcoin Clicker!</h2>
+                <img id="btnImagem" src="images/bitcoin.png" alt="bitCoin" onclick="contar()">
+                <p> Bitcoins:
+                    <span id="contador">0</span>
+                </p>
+            </section>
+
+
+            <section class="hover">
+                <div class="lock">
+                    <h2>Desbloquear</h2>
+                    <img src="images/lock.png" alt="cadeado" onclick="desbloquear('hoverConteudo')">
+                    <p>25 Bitcoins</p>
+                </div>
+                <div class="hoverConteudo">
+                    <p id="hoverText">Não passes o mouse por aqui</p>
+                </div>
+            </section>
+
+
+            <section class="mudaCor">
+                <div class="lock">
+                    <h2>Desbloquear</h2>
+                    <img src="images/lock.png" alt="cadeado" onclick="desbloquear('mudaCorConteudo')">
+                    <p>50 Bitcoins</p>
+                </div>
+                <div class="mudaCorConteudo">
+                    <p>
+                        <span class="azul" id="pintaTexto">Pinta este texto com as cores abaixo</span>
+                    </p>
+                    <nav>
+                        <button onclick="mudarCor('red')">Red</button>
+                        <button onclick="mudarCor('green')">Green</button>
+                        <button onclick="mudarCor('blue')">Blue</button>
+                    </nav>
+                </div>
+            </section>
+
+
+            <section class="escreveEMuda">
+                <div class="lock">
+                    <h2>Desbloquear</h2>
+                    <img src="images/lock.png" alt="cadeado" onclick="desbloquear('escreveEMudaConteudo')">
+                    <p>100 Bitcoins</p>
+                </div>
+                <div class="escreveEMudaConteudo">
+                    <p>
+                        Experimenta escrever...
+                    </p>
+                    <input type="text" id="campoTexto" placeholder="Escreve algo...">
+                </div>
+            </section>
+
+
+            <section class="mudaFundo">
+                <div class="lock">
+                    <h2>Desbloquear</h2>
+                    <img src="images/lock.png" alt="cadeado" onclick="desbloquear('mudaFundoConteudo')">
+                    <p>200 Bitcoins</p>
+                </div>
+                <div class="mudaFundoConteudo">
+                    <p>4. Escolha uma cor em inglês:
+                        <input type="text" id="corInput" placeholder="ex: pink">
+                        <button onclick="submeterCor()">submeter</button>
+                    </p>
+
+                    <h3>6.</h3>
+                    <input type="text" id="nome" placeholder="Insira o seu nome">
+                    <input type="number" id="idade" placeholder="Insira a sua idade">
+                    <button onclick="enviar()">Submit</button>
+                    <p id="mensagem"></p>
+
+                    <h3>7. Automatic Counter: <span id="autoContador">0</span></h3>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
